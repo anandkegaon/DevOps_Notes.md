@@ -81,8 +81,40 @@ terraform apply -var-file="varfile.tfvars" — Pass in variables contained in a 
 
 terraform apply -target=”module.appgw.0" — Apply changes only to the targeted resource.
 
-                                 //Destroy Your Infrastructure//                                
-                      
-                      
+                                 //Destroy Your Infrastructure//   
+
+
+ 
+terraform destroy                           — Destroy the infrastructure managed by Terraform.
+
+terraform destroy -target=”module.appgw.0"  — Destroy only the targeted resource.
+
+terraform destroy --auto-approve            — Destroy the infrastructure without having to interactively type ‘yes’ to the plan. Useful in automation CI/CD pipelines.  
+
+
+                                 // ‘Taint’ or ‘Untaint’ Your Resources //
+
+              Use the "taint" command to mark a resource as not fully functional. It will be deleted and re-created.
+
+terraform taint vm1.name                   — Taint a specified resource instance.
+
+terraform untaint vm1.name                 — Untaint the already tainted resource instance.   
+
+
+                                 // Refresh the State File//
+
+ terraform refresh               — Modify the state file with updated metadata containing information on 
+                                   the resources being managed in Terraform. Will not modify your infrastructure                                
+
+
+                               // View Your State File //
+                               
+terraform show                      — Show the state file in a human-readable format.
+
+terraform show <path to statefile>  — If you want to read a specific state file, you can provide the path to it. If no path is provided, the current state file is shown.
+
+                             // 
+
+                                                           
 
                 
