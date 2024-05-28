@@ -17,3 +17,23 @@ REPOSITORY : Storage where we can keep our helm charts local/remote which can be
 Helm Template :
 
 no hardcoded value is entered in the template so that we can refer a value from outside.
+
+
+helm commands:
+
+helm repo : interact with central repo
+
+helm repo list : list the repo
+
+helm repo add <repo name> <url>: adding the new repo 
+
+helm repo remove <repo name>: removing the repo
+
+helm search : finding the chart ex. helm serach repo <chart name>
+
+helm show : show all information of available charts
+
+helm install 
+
+helm install mychart stable/tomcat --wait --timeout 10s  (once we run this command the timeout will give the 
+                                                           result after timeout uses for avoiding the errors)
