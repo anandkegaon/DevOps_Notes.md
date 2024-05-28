@@ -1,6 +1,6 @@
 yum & apt in linux are packing manager which helps us to install the packages.
 
-the same way in kubernetes for run numeber of .yml file (mainfest)as package we use helm 
+the same way in kubernetes for run number of .yml file (mainfest)as package we use helm 
 
 helm is collection of manifest files in the form of packege using helm we can perform a task which is written inside the 
 
