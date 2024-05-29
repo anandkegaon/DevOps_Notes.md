@@ -40,4 +40,4 @@ helm show : show all information of available charts
 helm install 
 
 helm install mychart stable/tomcat --wait --timeout 10s  (once we run this command the timeout will give the 
-                                                           result after timeout uses for avoiding the errors)
+                                                           result after 10s uses for avoiding the errors)
