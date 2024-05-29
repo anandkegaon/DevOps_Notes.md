@@ -18,6 +18,10 @@ Helm Template :
 
 no hardcoded value is entered in the template so that we can refer a value from outside.
 
+This template can be used for multiple stgaes like dev , testing ,uat, preprod and Prod .
+
+only values we need to change as per the requirments .
+
 
 helm commands:
 
