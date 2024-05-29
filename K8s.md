@@ -41,10 +41,10 @@ K8s Master slave arch.
 
 1-Master : It works on 4 Parts
 
-a)-Control Manager(CM)-(actual start=desired state) : It will control and monitor the work it will try so satisfiy the AS =DS 
-b- kube scheduler - it will complete the task which is assigned by CM , creating pods in nodes.
-c- etcd cluster  - It will store all the record and data of Master Node in it .
-d- API server - It helps all services to communicate with each other.
+a)- Control Manager(CM)-  (actual start=desired state) :  It will control and monitor the work it will try so satisfiy the AS =DS 
+b)- kube scheduler     -  (Creating pod in nodes)      :  It will complete the task which is assigned by CM , creating pods in nodes.
+c)- etcd cluster       -  (Data Storage )              :  It will store all the record and data of Master Node in it .
+d)- API server         -  (Frontend )                  :  It helps all services to communicate with each other.
 
 
 POD :
