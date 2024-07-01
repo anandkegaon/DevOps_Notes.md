@@ -4,7 +4,7 @@ SQ server consist 3 parts:
 1)rules
 2)web
 3)db
-
+port : 9000
 User System :
 
 user system sonsist sourcecode and sq scanner installed in it.
@@ -37,6 +37,12 @@ sonarqube scanner: it is utility which sacn the code and generate report
 
 source code for build the anylysis
 
+
+Quality profile vs Quality gates:
+
+Every project has a quality profile set for each supported language. The profile defines which rules will be applied during analysis. 
+After analysis, the quality gate takes the resulting metrics and compares them to its defined thresholds to determine if the code meets 
+the requirements for release or merge.
 
 Scanner types:
 
