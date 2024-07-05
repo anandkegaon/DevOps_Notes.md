@@ -51,6 +51,28 @@ Services in K8s:
                 The service exposes port 80 and forwards the traffic to the pods’ port 8080. We set the service type to NodePort,
                 and Kubernetes exposes the service on a specific port on a qualifying node within the cluster.
 
+3 - LoadBalancer services: LoadBalancer services connect our applications externally, and production environments use them where high availability and scalability are critical. When we create a LoadBalancer service, 
+                            Kubernetes provisions a load balancer in our cloud environment and forwards the traffic to the nodes running the service.
+
+
+                              LoadBalancer services are ideal for applications that need to handle high traffic volumes, such as web applications or APIs. With LoadBalancer services, we can access our application using a 
+                              single IP address assigned to the load balancer
+
+                  Basic .yml file:
+ 
+                   apiVersion: v1
+                    kind: Service
+                   metadata:
+                      name: web
+                    spec:
+                        selector:
+                          app: web
+                          type: LoadBalancer
+                    ports:
+                      - name: http
+                        port: 80
+                        targetPort: 8080
+                               
 
 
 
